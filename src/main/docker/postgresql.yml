@@ -1,0 +1,11 @@
+version: '2'
+services:
+    dynastywars-postgresql:
+        image: postgres:9.6.5
+        # volumes:
+        #     - ~/volumes/jhipster/dynastywars/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=dynastywars
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
